@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/index/main",
     "pages/inventory/main",
     "pages/forme/main",
     "pages/forme/setInfo/main",
     "pages/forme/setInfo/personInfo/main",
     "pages/forme/myAddress/main",
     "pages/forme/myAddress/addAddress/main",
-    "pages/index/main",
     "pages/index/goodsDetail/main",
     "pages/login/main"
   ],

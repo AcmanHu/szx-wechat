@@ -83,10 +83,9 @@ export default {
       let arr = []
       for (const i of this.cart.car) {
         if(i.status) {
-          arr.push(i)
+          arr.push(i.goods_id)
         }
       }
-      console.log(arr)
       if(arr.length<1) {
          wx.showToast({
           title: '亲~你还没选中要删除的商品噢~',
@@ -98,10 +97,7 @@ export default {
           title: '警告',
           message: '是否删除选中商品'
         }).then(() => {
-          for (const i of arr) {
-            console.log(i)
-            this.deleteGoods({userinfo: wx.getStorageSync('user').user_id, goods_id: i.goods_id})
-          }
+            this.deleteGoods({userinfo: wx.getStorageSync('user').user_id, goods_id: {goods_id: arr}})
           // on confirm
         }).catch(() => {
           // on cancel

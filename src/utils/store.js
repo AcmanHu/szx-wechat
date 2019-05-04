@@ -88,11 +88,13 @@ const store = new Vuex.Store({
     },
     //删除数据后更新购物车
     deleteGoods(state, params) {
-      state.cart.car.some((item, index) => {
-        if(item.goods_id == params) {
-          state.cart.car.splice(index, 1)
+      for (const key in state.cart.car) {
+        for (const i of params) {
+          if(state.cart.car[key].goods_id = i) {
+            state.cart.car.splice(key, 1)
+          }
         }
-      })
+      }
     }
   },
   actions: {
@@ -151,12 +153,10 @@ const store = new Vuex.Store({
     //删除购物车
     async deleteGoods({commit}, params) {
       let {userinfo, goods_id} = params
-      let info = await $ajax('shopcart/'+userinfo+'/'+goods_id)
-      // console.log(info)
-      commit('deleteGoods', goods_id)
+      let info = await $axios('shopcart/'+userinfo, goods_id, 'DELETE')
+      commit('deleteGoods', goods_id.goods_id)
     },
     //支付
-    
   }
 })
 

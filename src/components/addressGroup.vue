@@ -20,7 +20,11 @@ export default {
   // props: ['info'],
 
   created() {
-
+    // console.log(this.info)
+  },
+  onShow() {
+    
+    // console.log(">>>>>>",this.info)
   },
   methods: {
 

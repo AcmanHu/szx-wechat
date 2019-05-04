@@ -19,7 +19,8 @@ export default {
 
   data () {
     return{
-      userID: wx.getStorageSync('user').user_id
+      userID: wx.getStorageSync('user').user_id,
+      allAddress: []
     }
   },
   methods: {
@@ -34,9 +35,11 @@ export default {
   },
   async onShow() {
     let info = await $ajax('user/'+ this.userID, '', 'GET')
-    console.log(info)
-    let address = JSON.parse(info.result.address)
-    console.log(address)
+    // let bb = info.result.address
+    // this.aaa = 
+    this.allAddress = info.result.address
+    // console.log(info.result.address)
+    // console.log(this.allAddress)
   },
 }
 </script>

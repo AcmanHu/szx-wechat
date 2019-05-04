@@ -35,7 +35,7 @@
 
     <div class="sureAdd">
       <van-button type="danger" size="large" @click="sureAdd" >确认添加</van-button>
-    </div> 
+    </div>
 
     <van-popup
       :show="show"
@@ -49,11 +49,10 @@
 </template>
 
 <script>
-import {$ajax} from '@/utils/request'
+import {$ajax, $axios} from '@/utils/request'
 export default {
   components: {
   },
-
   data () {
     return{
       show: false,
@@ -98,14 +97,23 @@ export default {
     },
     async sureAdd() {
       let data = {
-        "user_id": "123123",
-        "address": [{},{}]
+        "user_id": wx.getStorageSync('user').user_id,
+        "address": [
+          {
+            "main":this.address,
+            "detail":this.addressDetail,
+            "receivePerson": this.name,
+            "phone":this.phone,
+            "status": this.isDefault == true ? 1:0
+          }
+		    ]
       }
-      let msg = await $ajax('user', data, 'POST')
+      let msg = await $axios('user', data, 'POST')
+      console.log(msg)
       console.log(this.name, this.phone, this.address, this.addressDetail, this.isDefault)
     }
   },
-  computed: {
+  computed: { 
     areaList() {
       return require('../../../../utils/area')
     }

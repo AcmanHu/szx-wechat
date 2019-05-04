@@ -109,6 +109,7 @@ export default {
   async onShow() {
     // console.log(userId)
     let msg = await $ajax('user/' + this.userId, '', 'GET')
+    console.log(msg)
     let info = msg.result
     this.name = info.realname
     this.IDcard = info.idcard
