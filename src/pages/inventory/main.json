@@ -1,0 +1,23 @@
+{
+  "navigationBarTitleText": "我的购物车",
+  "usingComponents": {
+    "van-tabbar": "../../../static/dist/tabbar/index",
+    "van-tabbar-item": "../../../static/dist/tabbar-item/index",
+    "van-nav-bar": "../../../static/dist/nav-bar/index",
+    "van-button": "../../../static/dist/button/index",
+    "van-tag": "../../../static/dist/tag/index",
+    "van-row": "../../../static/dist/row/index",
+    "van-col": "../../../static/dist/col/index",
+    "van-cell": "../../../static/dist/cell/index",
+    "van-cell-group": "../../../static/dist/cell-group/index",
+    "van-panel": "../../../static/dist/panel/index",
+    "van-notice-bar": "../../../static/dist/notice-bar/index",
+    "van-dialog": "../../../static/dist/dialog/index",
+    "van-card": "../../../static/dist/card/index",
+    "van-checkbox": "../../../static/dist/checkbox/index",
+    "van-submit-bar": "../../../static/dist/submit-bar/index",
+    "van-swipe-cell": "../../../static/dist/swipe-cell/index",
+    "van-stepper": "../../../static/dist/stepper/index"
+
+  }
+}

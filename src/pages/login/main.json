@@ -1,0 +1,17 @@
+{
+  "navigationBarTitleText": "授权页面",
+  "usingComponents": {
+    "van-tabbar": "../../../static/dist/tabbar/index",
+    "van-tabbar-item": "../../../static/dist/tabbar-item/index",
+    "van-button": "../../../static/dist/button/index",
+    "van-tag": "../../../static/dist/tag/index",
+    "van-row": "../../../static/dist/row/index",
+    "van-col": "../../../static/dist/col/index",
+    "van-panel": "../../../static/dist/panel/index",
+    "van-notice-bar": "../../../static/dist/notice-bar/index",
+    "van-dialog": "../../../static/dist/dialog/index",
+    "van-card": "../../../static/dist/card/index",
+    "van-stepper": "../../../static/dist/stepper/index"
+
+  }
+}

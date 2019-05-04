@@ -1,0 +1,23 @@
+{
+  "navigationBarTitleText": "我的收货地址",
+  "usingComponents": {
+    "van-tabbar": "../../../static/dist/tabbar/index",
+    "van-tabbar-item": "../../../static/dist/tabbar-item/index",
+    "van-button": "../../../static/dist/button/index",
+    "van-cell-group": "../../../static/dist/cell-group/index",
+    "van-tag": "../../../static/dist/tag/index",
+    "van-popup": "../../../static/dist/popup/index",
+    "van-area": "../../../static/dist/area/index",
+    "van-row": "../../../static/dist/row/index",
+    "van-col": "../../../static/dist/col/index",
+    "van-panel": "../../../static/dist/panel/index",
+    "van-notice-bar": "../../../static/dist/notice-bar/index",
+    "van-dialog": "../../../static/dist/dialog/index",
+    "van-card": "../../../static/dist/card/index",
+    "van-stepper": "../../../static/dist/stepper/index",
+    "van-collapse": "../../../static/dist/collapse/index",
+    "van-collapse-item": "../../../static/dist/collapse-item/index",
+    "van-cell": "../../../static/dist/cell/index",
+    "van-icon": "../../../static/dist/icon/index"
+  }
+}
